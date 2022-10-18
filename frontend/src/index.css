@@ -1,0 +1,56 @@
+/* CSS smacss and bem ideology */
+
+/* add universal Box Sizing */
+html {
+  box-sizing: border-box;
+  /* display: flex; */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  min-width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  /* justify-content: center; */
+  align-items: center;
+  /* min-height: 100vh; */
+  /* overflow: auto; */
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+/* THEME */
+:root {
+  /* prettier-ignore */
+  font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Tahoma, Arial,sans-serif;
+  /* font-family: 'Open Sans'; */
+
+  --nav: #212124;
+
+  --bg1: rgb(74, 21, 75);
+  --bg2: rgb(246, 239, 232);
+
+  --mid1: rgb(18, 143, 220);
+  --mid2: rgb(0, 109, 172);
+  --mid3: rgb(36, 101, 212);
+  --mid4: rgb(60, 145, 214);
+}
